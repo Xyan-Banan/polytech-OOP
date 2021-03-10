@@ -7,6 +7,7 @@
 using namespace std;
 
 void processSpaces(string& str);
+vector<string> fillVector(string& str);
 
 int main()
 {
@@ -24,10 +25,18 @@ int main()
 	buff << file.rdbuf();
 	text = buff.str();
 
+	cout << "Original text:" << endl;
 	cout << text << endl;
 
 	processSpaces(text);
+	cout << endl << "After formatting:" << endl;
 	cout << text << endl;
+	vector<string> resV = fillVector(text);
+
+	cout << endl << "After splitting:" << endl;
+	for (auto it = resV.begin(); it != resV.end(); it++) {
+		cout << *it << endl;
+	}
 }
 
 bool isDigit(char c) {
@@ -45,6 +54,10 @@ bool isWord(char c) {
 void processSpaces(string& str) {
 	//string::iterator it;
 	//replace_if(str.begin(),str.end(), [](string::iterator it) {return *it == '\t' || *it == '\n'; }, ' ');
+
+	if (str.empty()) {
+		return;
+	}
 
 	replace_if(str.begin(), str.end(), [](char c) {return c == '\t' || c == '\n'; }, ' ');
 
@@ -72,4 +85,25 @@ void processSpaces(string& str) {
 			str.replace(it, it + 1, *it + string(" "));
 		}
 	}
+}
+
+vector<string> fillVector(string& str) {
+	vector<string> v;
+	if (str.empty()) {
+		return v;
+	}
+
+	size_t pos,start = 0;
+	v.push_back("");
+	while ((pos = str.find(" ",start)) != string::npos) {
+		if (v.back().size() + (pos - start)<= 40)
+			v.back() += str.substr(start, pos - start + 1);
+		else {
+			v.back().resize(v.back().size() - 1);
+			v.push_back(str.substr(start, pos - start + 1));
+		}
+		start = pos + 1;
+	}
+	
+	return v;
 }
