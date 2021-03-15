@@ -60,7 +60,8 @@ int main()
             cout << arr[i] << " ";
         cout << endl;
 
-        copy(arr,arr + size,v1.begin());
+        v1.insert(v1.begin(), arr, arr + size);
+        //copy(arr,arr + size,v1.begin());
 
         cout << "Copied values from array:" << endl;
         printVector(v1);
