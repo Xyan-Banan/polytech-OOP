@@ -1,0 +1,4 @@
+﻿  lab6-algorithms.cpp
+C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab6-algorithms\lab6-algorithms\part1.h(84,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab6-algorithms\lab6-algorithms\part2.h(58,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  lab6-algorithms.vcxproj -> C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab6-algorithms\Debug\lab6-algorithms.exe
