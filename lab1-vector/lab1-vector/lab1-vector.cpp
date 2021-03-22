@@ -1,6 +1,26 @@
-﻿#include <iostream>
+﻿/*
+Задание к лабораторной работе. Необходимо выполнить ВСЕ задания.
+
+1)	Напишите алгоритм сортировки (любой простейший) содержимого вектора целых чисел, используя оператор operator[].
+
+2)	Напишите алгоритм сортировки (любой простейший) содержимого вектора целых чисел, используя метод at().
+
+3)	Напишите алгоритм сортировки (любой простейший) содержимого вектора целых чисел, используя для доступа к содержимому вектора только итераторы. Для работы с итераторами допустимо использовать только операторы получения текущего элемента и перехода в следующему (подсказка, можно сохранять копию итератора указывающего на некоторый элемент).
+
+4)	Прочитайте во встроенный массив С содержимое текстового файлы, скопируйте данные в вектор одной строкой кода (без циклов и алгоритмов STL)
+
+5)	Напишите программу, сохраняющую в векторе числа, полученные из стандартного ввода (окончанием ввода является число 0). Удалите все элементы, которые делятся на 2 (не используете стандартные алгоритмы STL), если последнее число 1. Если последнее число 2, добавьте после каждого числа которое делится на 3 три единицы.
+
+6)	Напишите функцию void fillRandom(double* array, int size) заполняющую массив случайными значениями в интервале от -1.0 до 1.0. Заполните с помощью заданной функции вектора размером 5,10,25,50,100 и отсортируйте его содержимое (с помощью любого разработанного ранее алгоритма модифицированного для сортировки действительных чисел)
+*/
+
+//Соколов Михаил Павлович
+//15.03.2021
+
+#include <iostream>
 #include <fstream>
 #include <vector>
+#include <ctime>
 
 using namespace std;
 
@@ -21,27 +41,34 @@ int main()
     srand(time(0));
 
     vector<int> v;
-    fillVector(v, 10);
+    fillVector(v, 500);
     vector<int> v1 = v;
     cout << "Original vector:" << endl;
-    printVector(v1);
+    //printVector(v1);
 
     /////////////////// P1 ///////////////////
+    clock_t time = clock();
     sortP1(v1);
+
     cout << "Sorted with operator[]:" << endl;
-    printVector(v1);
+    cout << "Time Difference: " << (float)(clock() - time) / 1000 << endl;
+    //printVector(v1);
 
     /////////////////// P2 ///////////////////
     v1 = v;
+    time = clock();
     sortP2(v1);
     cout << "Sorted with method at():" << endl;
-    printVector(v1);
+    cout << "Time Difference: " << (float)(clock() - time) / 1000 << endl;
+    //printVector(v1);
 
     /////////////////// P3 ///////////////////
     v1 = v;
+    time = clock();
     sortP3(v1);
     cout << "Sorted with iterators:" << endl;
-    printVector(v1);
+    cout << "Time Difference: " << (float)(clock() - time) / 1000 << endl;
+    //printVector(v1);
 
     /////////////////// P4 ///////////////////
     cout << "Reading values to array from file:" << endl;
@@ -69,10 +96,10 @@ int main()
 
     /////////////////// P5 ///////////////////
     
-    /*readVector(v1);
+    readVector(v1);
     processVector(v1);
     cout << "Processed vector:" << endl;
-    printVector(v1);*/
+    //printVector(v1);
 
     /////////////////// P6 ///////////////////
 
@@ -84,8 +111,10 @@ int main()
         cout << doubles[i] << " ";
     }
     cout << endl;
+    time = clock();
     sortP6(doubles, size);
     cout << "Sorted array of doubles" << endl;
+    cout << "Time Difference: " << (float)(clock() - time) / 1000 << endl;
     for (int i = 0; i < size; i++) {
         cout << doubles[i] << " ";
     }

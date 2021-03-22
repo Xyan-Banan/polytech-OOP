@@ -26,13 +26,22 @@ void Factorials::iter::end(vector<int>& v) {
 	cur_n = v.end();
 }
 
-void Factorials::iter::operator++(int) {
+Factorials::iter Factorials::iter::operator++() {
 	cur_n++;
+	return *this;
+}
+
+Factorials::iter Factorials::iter::operator++(int) {
+	iter tmp(*this);
+	++(*this);
+	return tmp;
 }
 
 
-void Factorials::iter::operator--(int) {
+Factorials::iter Factorials::iter::operator--(int) {
+	iter tmp(*this);
 	cur_n--;
+	return tmp;
 }
 
 int& Factorials::iter::operator*() {

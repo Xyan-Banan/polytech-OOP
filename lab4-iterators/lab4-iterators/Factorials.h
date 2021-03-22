@@ -7,17 +7,23 @@ class Factorials
 {
 
 private:
-	class iter
+	class iter: public iterator<bidirectional_iterator_tag,int>
 	{
 	public:
+		/*typedef bidirectional_iterator_tag iterator_category;
+		typedef ptrdiff_t difference_type;
+		typedef ptrdiff_t distance_typ;*/
+
 		int& operator*();
-		void operator++(int);
+		iter operator++();
+		iter operator++(int);
 		//override operator++();
-		void operator--(int);
+		iter operator--(int);
 		bool operator==(iter other);
 		bool operator!=(iter other);
 		void begin(vector<int>& v);
 		void end(vector<int>& v);
+
 	private:
 		vector<int>::iterator cur_n;
 	};

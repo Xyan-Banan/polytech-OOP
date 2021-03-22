@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void processSpaces(string& str);
+void processText(string& str);
 vector<string> fillVector(string& str);
 
 int main()
@@ -28,7 +28,7 @@ int main()
 	cout << "Original text:" << endl;
 	cout << text << endl;
 
-	processSpaces(text);
+	processText(text);
 	cout << endl << "After formatting:" << endl;
 	cout << text << endl;
 	vector<string> resV = fillVector(text);
@@ -85,6 +85,23 @@ void processSpaces(string& str) {
 			str.replace(it, it + 1, *it + string(" "));
 		}
 	}
+}
+
+void processLongWords(string& str) {
+	size_t pos, start = 0;
+	while ((pos = str.find(" ", start)) != string::npos) {
+		auto length = pos - start;
+		if (length > 10) {
+			str.replace(start, length, "Vau!!!");
+			length = 6;
+		}
+		start += length + 1;
+	}
+}
+
+void processText(string& str) {
+	processSpaces(str);
+	processLongWords(str);
 }
 
 vector<string> fillVector(string& str) {

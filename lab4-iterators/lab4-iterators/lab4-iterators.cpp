@@ -19,4 +19,7 @@ int main()
     }
     cout << *(f.begin()) << endl;
 
+    vector<int> v;
+    copy(f.begin(), f.end(), v.begin());
+
 }

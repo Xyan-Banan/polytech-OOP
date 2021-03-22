@@ -1,8 +1,8 @@
 ﻿  lab1-vector.cpp
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(21,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(104,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(110,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(112,27): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(123,23): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(125,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(41,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(133,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(139,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(141,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(152,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\lab1-vector\lab1-vector.cpp(154,27): warning C4018: <: несоответствие типов со знаком и без знака
   lab1-vector.vcxproj -> C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab1-vector\Debug\lab1-vector.exe
