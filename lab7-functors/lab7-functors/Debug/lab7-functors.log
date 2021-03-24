@@ -1,0 +1,3 @@
+﻿  lab7-functors.cpp
+C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab7-functors\lab7-functors\lab7-functors.cpp(15,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  lab7-functors.vcxproj -> C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab7-functors\Debug\lab7-functors.exe

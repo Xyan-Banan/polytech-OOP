@@ -25,7 +25,7 @@ typedef  struct
 } Shape;
 
 Shape genShape();
-vector<Shape> fillVector(int size);
+//vector<Shape> fillVector(int size);
 bool isSquare(Shape s);
 void printShape(Shape s);
 //void printVector(vector<Shape>& v);
