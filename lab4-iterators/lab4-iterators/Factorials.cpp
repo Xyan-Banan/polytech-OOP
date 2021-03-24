@@ -1,29 +1,23 @@
 #include "Factorials.h"
 
 Factorials::Factorials() {
-	for (int i = 1; i <= 10; i++) {
-		n.push_back(i);
-	}
+	n = vector<int>({ 1,2,3,4,5,6,7,8,9,10 });
 }
 
 Factorials::iter Factorials::begin() {
-	iter it;
-	it.begin(n);
-	return it;
+	//iter it;
+	//it.begin(n);
+	return iter(n.begin());
 }
 
 Factorials::iter Factorials::end() {
-	iter it;
-	it.end(n);
-	return it;
+	//iter it;
+	//it.end(n);
+	return iter(n.end());
 }
 
-void Factorials::iter::begin(vector<int>& v) {
-	cur_n = v.begin();
-}
-
-void Factorials::iter::end(vector<int>& v) {
-	cur_n = v.end();
+size_t Factorials::size() {
+	return n.size();
 }
 
 Factorials::iter Factorials::iter::operator++() {
@@ -44,7 +38,7 @@ Factorials::iter Factorials::iter::operator--(int) {
 	return tmp;
 }
 
-int& Factorials::iter::operator*() {
+int Factorials::iter::operator*() {
 	int factorial = 1;
 	for (int i = 1; i <= *cur_n; i++)
 		factorial *= i;
