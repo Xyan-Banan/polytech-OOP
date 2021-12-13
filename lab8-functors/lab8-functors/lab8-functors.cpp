@@ -10,7 +10,7 @@ int main()
 {
     cout << "Hello World!\n";
 
-    part1();
+    //part1();
     part2();
 
 }

@@ -1,4 +1,0 @@
-﻿  lab5-algorithm-sort.cpp
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab5-algorithm-sort\lab5-algorithm-sort\lab5-algorithm-sort.cpp(44,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab5-algorithm-sort\lab5-algorithm-sort\lab5-algorithm-sort.cpp(96,20): warning C4018: <: несоответствие типов со знаком и без знака
-  lab5-algorithm-sort.vcxproj -> C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab5-algorithm-sort\Debug\lab5-algorithm-sort.exe

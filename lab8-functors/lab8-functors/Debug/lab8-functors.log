@@ -1,4 +1,0 @@
-﻿  lab8-functors.cpp
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab8-functors\lab8-functors\part1.h(17,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab8-functors\lab8-functors\part2.h(32,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  lab8-functors.vcxproj -> C:\Users\Michael\Documents\_Study\(4 сем) ООП\Готовые\lab8-functors\Debug\lab8-functors.exe

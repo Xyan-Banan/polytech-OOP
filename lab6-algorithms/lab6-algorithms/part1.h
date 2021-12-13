@@ -19,7 +19,7 @@ set<string> destructText(string& str);
 void processSpaces(string& str);
 
 int part1() {
-	string fileName = "text.txt";
+	string fileName = "part1.h";
 	ifstream file;
 	file.open(fileName);
 	if (!file) {
